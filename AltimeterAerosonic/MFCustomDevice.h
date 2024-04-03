@@ -5,8 +5,8 @@
 
 // only one entry required if you have only one custom device
 enum {
-    MY_CUSTOM_DEVICE_1 = 1,
-    MY_CUSTOM_DEVICE_2
+    ALTIMETER_AEROSONIC = 1,
+    ALTIMETER_AEROSONIC_ALTITUDE
 };
 class MFCustomDevice
 {
@@ -20,7 +20,6 @@ public:
 private:
     bool           getStringFromEEPROM(uint16_t addreeprom, char *buffer);
     bool           _initialized = false;
-    MyCustomClass *_mydevice;
-    uint8_t        _pin1, _pin2, _pin3;
+    AltimeterAerosonic *_mydevice;
     uint8_t        _customType = 0;
 };

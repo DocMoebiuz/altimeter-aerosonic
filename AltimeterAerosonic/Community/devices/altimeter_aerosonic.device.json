@@ -1,0 +1,41 @@
+{
+    "$schema": "./mfdevice.schema.json",
+    "Info": {
+      "Label": "Altimeter Aerosonic",
+      "Type": "ALTIMETER_AEROSONIC",
+      "Author": "Mobiflight",
+      "URL": "https://github.com",
+      "Version" : "1.0.0"
+    },
+    "Config": {
+      "Pins": [
+        "Display Address (Setting)",
+        "Display Address (Altitude)",
+        "Pin (Code)"
+      ],
+      "I2C": {
+        "Enabled": false,
+        "Addresses": [
+          "0x3C"
+        ]
+      }
+    },
+    "MessageTypes": [
+      {
+        "id": 0,
+        "label": "Show Altimeter Setting",
+        "description": "$ will be displayed as Altimeter Setting"
+      },
+      {
+        "id": 1,
+        "label": "Show Altitude Value",
+        "description": "$ will be displayed as Altitude Value"
+      },
+      {
+        "id": 2,
+        "label": "Show Code On/Off",
+        "description": "0 = True, 1 = False"
+      }
+    ]
+  }
+  
